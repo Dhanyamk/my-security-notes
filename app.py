@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 app = Flask(__name__)
 
-@app.route('/getmsg/', methods=['GET'])
+'''@app.route('/getmsg/', methods=['GET'])
 def respond():
     # Retrieve the name from url parameter
     name = request.args.get("name", None)
@@ -40,7 +40,7 @@ def post_something():
             "ERROR": "no name found, please send a name."
         })
 
-# A welcome message to test our server
+# A welcome message to test our server'''
 @app.route('/')
 def index():
     return "<h1>Welcome to our server !!</h1>"
